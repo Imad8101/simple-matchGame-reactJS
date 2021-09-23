@@ -1,0 +1,25 @@
+.fruit-item {
+  list-style-type: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.fruit-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.thumbnail-fruit-image {
+  width: 63px;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .fruit-item {
+    /* flex-grow: 1; */
+  }
+  .thumbnail-fruit-image {
+    width: 90px;
+  }
+}

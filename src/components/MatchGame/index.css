@@ -1,0 +1,131 @@
+/*
+Hex:#2c0e3a
+Hex:#ffffff
+Hex:#fec653
+Hex:#cf60c8
+*/
+
+.app-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  min-height: 100vh;
+  background-size: cover;
+  font-family: 'Roboto';
+}
+
+.game-body-container {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*======================= game body container styling  */
+
+.running-game-body-container {
+  width: 85%;
+  max-width: 550px;
+  margin-top: 20px;
+  min-height: 80vh;
+}
+
+.fruit-img-container {
+  /* border: 1px solid white; */
+}
+.fruit-img {
+  width: 100%;
+  border-radius: 9px;
+}
+.tabList-container {
+  margin: 0;
+  padding-left: 0;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+.fruits-item-container {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid white; */
+}
+
+/* ==============score card styling ======================== */
+
+.score-card-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png');
+  background-size: cover;
+  background-position: center;
+  width: 85%;
+  max-width: 550px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+.trophy-img {
+  width: 270px;
+  margin-top: 70px;
+}
+.score-text {
+  color: white;
+  font-weight: 700;
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+.playAgain-btn {
+  margin-top: 20px;
+  background-color: #cf60c8;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.play-again {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+.reset-img {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .running-game-body-container {
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fruits-item-container {
+  }
+  .fruit-img-container {
+    width: 80%;
+  }
+
+  .score-card-container {
+    /* border: 1px solid white; */
+    width: 32%;
+    max-width: 580px;
+    background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
+    justify-content: flex-end;
+  }
+  .playAgain-btn {
+    margin-bottom: 20px;
+  }
+}
